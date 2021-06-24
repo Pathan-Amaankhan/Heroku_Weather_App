@@ -364,7 +364,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "onAddClick",
         value: function onAddClick() {
           this.listOfPanels.push(1);
-          console.log(this.listOfPanels);
         }
       }, {
         key: "onRemoveClick",
@@ -783,8 +782,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }, function (error) {
             if (isNotUpdating) {
               _this.openErrorDialog();
-            } // console.clear();
+            }
 
+            console.clear();
           });
         }
       }, {
@@ -794,7 +794,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             try {
               this.getWeatherData(this.cityName, this.apiKey, false);
             } catch (e) {
-              console.log(e); // console.clear();
+              console.clear();
             }
           }
         }
@@ -861,7 +861,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 _this2.tryToUpdate();
               });
             } catch (e) {
-              console.log(e); // console.clear();
+              console.clear();
             }
           });
         }

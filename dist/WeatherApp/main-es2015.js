@@ -207,7 +207,6 @@ class MainComponent {
     ngOnInit() { }
     onAddClick() {
         this.listOfPanels.push(1);
-        console.log(this.listOfPanels);
     }
     onRemoveClick() {
         this.listOfPanels.pop();
@@ -392,7 +391,7 @@ class PanelComponent {
             if (isNotUpdating) {
                 this.openErrorDialog();
             }
-            // console.clear();
+            console.clear();
         });
     }
     tryToUpdate() {
@@ -401,8 +400,7 @@ class PanelComponent {
                 this.getWeatherData(this.cityName, this.apiKey, false);
             }
             catch (e) {
-                console.log(e);
-                // console.clear();
+                console.clear();
             }
         }
     }
@@ -456,8 +454,7 @@ class PanelComponent {
                 });
             }
             catch (e) {
-                console.log(e);
-                // console.clear();
+                console.clear();
             }
         });
     }
